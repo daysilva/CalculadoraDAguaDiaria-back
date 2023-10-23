@@ -1,0 +1,6 @@
+# criar uma rede para os containes
+docker network create my_app
+
+# criar imagem do postgres
+docker run --name my_postgres --network my_app -e POSTGRES_USER=root -e POSTGRES_PASSWORD=ifrn.cn -e POSTGRES_DB=teste -p 5434:5432 -d postgres
+
