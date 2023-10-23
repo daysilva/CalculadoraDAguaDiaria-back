@@ -9,10 +9,10 @@ export const Person = sequelize.define('person', {
     },
     // quantidade de agua que uma pessoa deve beber
     quantAgua: {
-      type: DataTypes.FLOAT              ,
+      type: DataTypes.FLOAT,
       allowNull: false
     }
   });
 
-  console.log("sincronizando...");
+console.log("sincronizando...");
 await Person.sync()
