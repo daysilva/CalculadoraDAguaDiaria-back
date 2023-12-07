@@ -1,11 +1,13 @@
 FROM node
 
-WORKDIR /usr/src/app
+WORKDIR /usr/app
 
-COPY . .
+RUN apt-get update && apt-get install -y git
 
-RUN npm install
+RUN git clone https://github.com/daysilva/CalculadoraDAguaDiaria-back.git
+
+WORKDIR /usr/app/CalculadoraDAguaDiaria-back
 
 EXPOSE 3000
 
-CMD [ "npm", "start"]
+CMD ["sh", "-c", "git pull && npm install && npm run start"]
