@@ -1,7 +1,7 @@
 import { Sequelize } from "sequelize";
 
 export const sequelize = new Sequelize('teste', 'root', 'ifrn.cn', {
-    host: 'my_postgres',
+    host: 'postgres-service',
     dialect: 'postgres',
     port: 5432
   });
