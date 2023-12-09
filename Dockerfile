@@ -10,4 +10,4 @@ WORKDIR /usr/app/CalculadoraDAguaDiaria-back
 
 EXPOSE 3000
 
-CMD ["sh", "-c", "git pull origin develop && npm install && npm run start"]
+CMD ["sh", "-c", "git pull origin homolog && npm install && npm run start"]
