@@ -1,6 +1,6 @@
 import { Sequelize } from "sequelize";
 
-export const sequelize = new Sequelize('bd_develop', 'claudio', 'senha#123', {
+export const sequelize = new Sequelize('bd_homolog', 'claudio', 'senha#123', {
     host: 'projeto-kubernets.mysql.database.azure.com',
     dialect: 'mysql',
     port: 3306,
